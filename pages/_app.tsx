@@ -2,6 +2,7 @@ import { AppProps } from 'next/app'
 import { useRouter } from 'next/router'
 import { useEffect } from 'react'
 import * as gtag from '../lib/gtag'
+import Head from 'next/head'
 import '../styles/globals.scss'
 
 function App({ Component, pageProps }: AppProps) {
@@ -17,7 +18,14 @@ function App({ Component, pageProps }: AppProps) {
     };
   }, [router.events]);
 
-  return <Component {...pageProps} />
+  return (
+    <>
+      <Head>
+          <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
+      <Component {...pageProps} />
+    </>
+  )
 }
 
 export default App
