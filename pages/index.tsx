@@ -1,8 +1,14 @@
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import Page from '../components/Page'
+import styles from '../styles/Home.module.scss'
 
 export default function Home() {
   return (
-    <h1>Hello</h1>
+    <Page>
+      <Head>
+        <title>Home</title>
+      </Head>
+      <h1 className={styles.title}>Home</h1>
+    </Page>
   )
 }
