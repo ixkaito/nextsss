@@ -6,7 +6,7 @@ import Head from 'next/head'
 import 'tailwindcss/tailwind.css'
 import '../styles/globals.scss'
 
-function App({ Component, pageProps }: AppProps) {
+function App({ Component, pageProps }: AppProps): JSX.Element {
   const router = useRouter()
 
   useEffect(() => {

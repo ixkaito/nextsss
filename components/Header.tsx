@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-export default function Header() {
+export default function Header(): JSX.Element {
   return (
     <header className="bg-gray-100 p-4">
       <nav>

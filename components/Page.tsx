@@ -6,7 +6,7 @@ type Props = {
   children?: ReactNode
 }
 
-export default function Page({ children }: Props) {
+export default function Page({ children }: Props): JSX.Element {
   return (
     <>
       <Header />

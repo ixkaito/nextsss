@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Page from '../components/Page'
 import styles from '../styles/About.module.scss'
 
-export default function About() {
+export default function About(): JSX.Element {
   return (
     <Page>
       <Head>
