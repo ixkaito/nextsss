@@ -1,12 +1,10 @@
 export default {
   openGraph: {
-    type: 'website',
-    locale: 'en_IE',
-    site_name: 'SiteName',
+    type: 'article',
+    locale: 'en_US',
+    site_name: 'NextSSS',
   },
   twitter: {
-    handle: '@handle',
-    site: '@site',
     cardType: 'summary_large_image',
   },
 }
