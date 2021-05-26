@@ -8,7 +8,7 @@ export default function Home() {
       <Head>
         <title>Home</title>
       </Head>
-      <h1 className={styles.title}>Home</h1>
+      <h1 className={`text-center uppercase ${styles.title}`}>Hello, World!</h1>
     </Page>
   )
 }

@@ -2,9 +2,9 @@ import Link from 'next/link'
 
 export default function Header() {
   return (
-    <header>
+    <header className="bg-gray-100 p-4">
       <nav>
-        <ul>
+        <ul className="flex justify-center gap-8">
           <li>
             <Link href="/">
               <a>Home</a>

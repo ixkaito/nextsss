@@ -3,6 +3,7 @@ import { useRouter } from 'next/router'
 import { useEffect } from 'react'
 import * as gtag from '../lib/gtag'
 import Head from 'next/head'
+import 'tailwindcss/tailwind.css'
 import '../styles/globals.scss'
 
 function App({ Component, pageProps }: AppProps) {

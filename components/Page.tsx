@@ -8,10 +8,12 @@ type Props = {
 
 export default function Page({ children }: Props) {
   return (
-    <div>
+    <>
       <Header />
-      {children}
+      <main className="p-8">
+        {children}
+      </main>
       <Footer />
-    </div>
+    </>
   )
 }
