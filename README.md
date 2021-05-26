@@ -1,5 +1,6 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# NextSSS
 
+This is a [Next.js](https://nextjs.org/) starter especially for static site including full setup for TypeScript, Tailwind CSS, Google Analytics, Next SEO, etc.
 ## Getting Started
 
 First, run the development server:
