@@ -20,11 +20,14 @@
     "@types/react": "^17.0.7",
     "@typescript-eslint/eslint-plugin": "^4.25.0",
     "@typescript-eslint/parser": "^4.25.0",
+    "autoprefixer": "^10.2.6",
     "eslint": "^7.27.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-react": "^7.23.2",
+    "postcss": "^8.2.13",
     "prettier": "^2.3.0",
     "sass": "^1.34.0",
+    "tailwindcss": "^2.1.2",
     "typescript": "^4.2.4"
   }
 }
