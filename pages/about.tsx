@@ -2,7 +2,7 @@ import { NextSeo } from 'next-seo'
 import Page from '../components/Page'
 import styles from '../styles/About.module.scss'
 
-export default function About(): JSX.Element {
+const About: React.FC = () => {
   return (
     <Page>
       <NextSeo
@@ -15,3 +15,5 @@ export default function About(): JSX.Element {
     </Page>
   )
 }
+
+export default About

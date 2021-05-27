@@ -6,7 +6,7 @@ type Props = {
   children?: ReactNode
 }
 
-export default function Page({ children }: Props): JSX.Element {
+const Page: React.FC<Props> = ({ children }) => {
   return (
     <>
       <Header />
@@ -17,3 +17,5 @@ export default function Page({ children }: Props): JSX.Element {
     </>
   )
 }
+
+export default Page

@@ -1,10 +1,10 @@
-import Document, { Html, Head, Main, NextScript, DocumentContext } from 'next/document'
+import Document, { Html, Head, Main, NextScript, DocumentContext, DocumentInitialProps } from 'next/document'
 import { GA_TRACKING_ID } from '../lib/gtag'
 
-export default class MyDocument extends Document {
-  static async getInitialProps(ctx: DocumentContext) {
+class MyDocument extends Document {
+  static getInitialProps = async (ctx: DocumentContext): Promise<DocumentInitialProps> => {
     const initialProps = await Document.getInitialProps(ctx)
-    return { ...initialProps }
+    return initialProps
   }
 
   render(): JSX.Element {
@@ -41,3 +41,5 @@ export default class MyDocument extends Document {
     )
   }
 }
+
+export default MyDocument

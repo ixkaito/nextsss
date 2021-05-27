@@ -8,7 +8,7 @@ import * as gtag from '../lib/gtag'
 import 'tailwindcss/tailwind.css'
 import '../styles/globals.scss'
 
-function App({ Component, pageProps }: AppProps): JSX.Element {
+const App: React.FC<AppProps> = ({ Component, pageProps }) => {
   const router = useRouter()
 
   useEffect(() => {
