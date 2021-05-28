@@ -1,9 +1,9 @@
 # NextSSS
 
-This is a [Next.js](https://nextjs.org/) starter especially for static site including full setup for TypeScript, Tailwind CSS, Google Analytics, Next SEO, etc.
+This is a [Next.js](https://nextjs.org/) starter template especially for static site including full setup for TypeScript, Tailwind CSS, Google Analytics, Next SEO, active link component, etc.
 ## How to Use
 
-Create a new Next.js app from NextSSS.
+Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the template:
 
 ```bash
 npx create-next-app --example https://github.com/ixkaito/nextsss
