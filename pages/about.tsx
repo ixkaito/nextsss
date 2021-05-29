@@ -1,10 +1,10 @@
 import { NextSeo } from 'next-seo'
-import Page from '../components/Page'
+import Layout from '../components/Layout'
 import styles from '../styles/About.module.scss'
 
 const About: React.FC = () => {
   return (
-    <Page>
+    <Layout>
       <NextSeo
         title="About"
       />
@@ -12,7 +12,7 @@ const About: React.FC = () => {
         <h1 className={styles.title}>About NextSSS</h1>
         <p className="mt-4">NextSSS is a Next.js static site starter including full setup for TypeScript, Tailwind CSS, Google Analytics, Next SEO, etc.</p>
       </div>
-    </Page>
+    </Layout>
   )
 }
 

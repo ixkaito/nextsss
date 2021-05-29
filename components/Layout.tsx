@@ -6,7 +6,7 @@ type Props = {
   children?: ReactNode
 }
 
-const Page: React.FC<Props> = ({ children }) => {
+const Layout: React.FC<Props> = ({ children }) => {
   return (
     <>
       <Header />
@@ -18,4 +18,4 @@ const Page: React.FC<Props> = ({ children }) => {
   )
 }
 
-export default Page
+export default Layout

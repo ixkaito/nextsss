@@ -1,10 +1,10 @@
 import { NextSeo } from 'next-seo'
-import Page from '../components/Page'
+import Layout from '../components/Layout'
 import styles from '../styles/Home.module.scss'
 
 const Home: React.FC = () => {
   return (
-    <Page>
+    <Layout>
       <NextSeo
         title="NextSSS"
         description="Next.js Static Site Starter"
@@ -13,7 +13,7 @@ const Home: React.FC = () => {
         }}
       />
       <h1 className={`text-center uppercase ${styles.title}`}>Hello, World!</h1>
-    </Page>
+    </Layout>
   )
 }
 
