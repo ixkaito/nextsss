@@ -6,6 +6,7 @@ const Header: React.FC = () => {
       <nav>
         <style jsx>{`
           .active {
+            @apply text-blue-500;
             border-bottom: 1px solid #000;
           }
         `}</style>
