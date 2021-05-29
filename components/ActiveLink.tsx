@@ -4,11 +4,15 @@ import Link, { LinkProps } from 'next/link'
 import React, { Children, ReactElement } from 'react'
 
 type Props = {
-  children: ReactElement,
-  activeClassName?: string,
+  children: ReactElement
+  activeClassName?: string
 } & LinkProps
 
-const ActiveLink: React.FC<Props> = ({ children, activeClassName, ...props }) => {
+const ActiveLink: React.FC<Props> = ({
+  children,
+  activeClassName,
+  ...props
+}) => {
   const { asPath } = useRouter()
   const child = Children.only(children)
   const childClassName = child.props.className || ''

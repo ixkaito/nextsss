@@ -10,10 +10,10 @@ export const pageview = (url: URL): void => {
 }
 
 type GTagEvent = {
-  action: string,
-  category: string,
-  label: string,
-  value: number,
+  action: string
+  category: string
+  label: string
+  value: number
 }
 
 // https://developers.google.com/analytics/devguides/collection/gtagjs/events

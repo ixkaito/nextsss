@@ -1,8 +1,17 @@
-import Document, { Html, Head, Main, NextScript, DocumentContext, DocumentInitialProps } from 'next/document'
+import Document, {
+  Html,
+  Head,
+  Main,
+  NextScript,
+  DocumentContext,
+  DocumentInitialProps,
+} from 'next/document'
 import { GA_TRACKING_ID } from '../lib/gtag'
 
 class MyDocument extends Document {
-  static getInitialProps = async (ctx: DocumentContext): Promise<DocumentInitialProps> => {
+  static getInitialProps = async (
+    ctx: DocumentContext
+  ): Promise<DocumentInitialProps> => {
     const initialProps = await Document.getInitialProps(ctx)
     return initialProps
   }
