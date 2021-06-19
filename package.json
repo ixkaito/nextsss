@@ -6,11 +6,11 @@
     "dev": "next dev",
     "build": "next build && next export",
     "start": "next start",
-    "format": "prettier --write .",
-    "lint": "eslint . --ext ts --ext tsx --ext js"
+    "lint": "next lint",
+    "format": "prettier --write ."
   },
   "dependencies": {
-    "next": "10.2.3",
+    "next": "11.0.0",
     "next-seo": "^4.24.0",
     "react": "17.0.2",
     "react-dom": "17.0.2"
@@ -18,11 +18,12 @@
   "devDependencies": {
     "@types/gtag.js": "^0.0.4",
     "@types/node": "^15.6.1",
-    "@types/react": "^17.0.7",
+    "@types/react": "17.0.11",
     "@typescript-eslint/eslint-plugin": "^4.25.0",
     "@typescript-eslint/parser": "^4.25.0",
     "autoprefixer": "^10.2.6",
-    "eslint": "^7.27.0",
+    "eslint": "7.29.0",
+    "eslint-config-next": "11.0.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-react": "^7.23.2",
     "postcss": "^8.2.13",
@@ -30,7 +31,7 @@
     "sass": "^1.34.0",
     "styled-jsx-plugin-postcss": "^4.0.1",
     "tailwindcss": "^2.1.2",
-    "typescript": "^4.2.4"
+    "typescript": "4.3.4"
   },
   "license": "MIT"
 }

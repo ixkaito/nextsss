@@ -3,6 +3,8 @@
   "plugins": ["@typescript-eslint"],
   "extends": [
     "eslint:recommended",
+    "next",
+    "next/core-web-vitals",
     "plugin:react/recommended",
     "plugin:@typescript-eslint/recommended"
     // Uncomment the following lines to enable eslint-config-prettier
