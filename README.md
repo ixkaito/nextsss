@@ -14,6 +14,60 @@ npx create-next-app --example https://github.com/ixkaito/nextsss
 yarn create next-app --example https://github.com/ixkaito/nextsss
 ```
 
+### Google Analytics
+
+Edit `GA_TRACKING_ID` in `/lib/gtag.ts`.
+
+Example:
+
+```ts
+export const GA_TRACKING_ID = 'G-XXXXXXXXXX'
+```
+
+### Active `className` on a link
+
+Example:
+
+```ts
+import Link from '../components/ActiveLink'
+
+const Nav: React.FC = () => {
+  return (
+    <nav>
+      <Link href="/">
+        <a>Home</a>
+      </Link>
+      <Link href="/about/">
+        <a>About</a>
+      </Link>
+    </nav>
+  )
+}
+
+export default Nav
+```
+
+This will dynamically add the `active` class name to each links. You can also change the `activeClassName` like this:
+
+```ts
+import Link from '../components/ActiveLink'
+
+const Nav: React.FC = () => {
+  return (
+    <nav>
+      <Link href="/" activeClassName="current">
+        <a>Home</a>
+      </Link>
+      <Link href="/about/" activeClassName="current">
+        <a>About</a>
+      </Link>
+    </nav>
+  )
+}
+
+export default Nav
+```
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
