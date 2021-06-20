@@ -5,9 +5,12 @@ const Header: React.FC = () => {
     <header className="bg-gray-100 p-4">
       <nav>
         <style jsx>{`
+          a {
+            @apply hover:text-blue-500;
+          }
+
           .active {
-            @apply text-blue-500;
-            border-bottom: 1px solid #000;
+            border-bottom: 1px solid;
           }
         `}</style>
         <ul className="flex justify-center gap-8">
