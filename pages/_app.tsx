@@ -12,8 +12,8 @@ const App: React.FC<AppProps> = ({ Component, pageProps }) => {
   const router = useRouter()
 
   useEffect(() => {
-    const handleRouteChange = (url: string) => {
-      gtag.pageview(url)
+    const handleRouteChange = (url: string, options: { shallow?: boolean }) => {
+      if (!options.shallow) gtag.pageview(url)
     }
     router.events.on('routeChangeComplete', handleRouteChange)
     return () => {
