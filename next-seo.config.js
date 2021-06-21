@@ -1,4 +1,7 @@
-export default {
+/**
+ * @type {import('next-seo/lib/types').NextSeoProps}
+ **/
+const config = {
   openGraph: {
     type: 'article',
     locale: 'en_US',
@@ -8,3 +11,5 @@ export default {
     cardType: 'summary_large_image',
   },
 }
+
+export default config
