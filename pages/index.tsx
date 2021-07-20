@@ -14,7 +14,7 @@ const Home: React.FC = () => {
           type: 'website',
         }}
       />
-      <div className={`grid place-items-center ${styles.hero}`}>
+      <div className={`flex-grow flex-shrink-0 grid place-content-center place-items-center ${styles.hero}`}>
         <figure className="max-w-3xl">
           <Image src={logo} alt="NextSSS Logo" />
         </figure>
