@@ -2,7 +2,7 @@ import { NextSeo } from 'next-seo'
 import Image from 'next/image'
 import Layout from '../components/Layout'
 import styles from '../styles/Home.module.scss'
-import building from '../public/building.jpg'
+import logo from '../public/logo@2x.png'
 
 const Home: React.FC = () => {
   return (
@@ -14,10 +14,12 @@ const Home: React.FC = () => {
           type: 'website',
         }}
       />
-      <h1 className={`text-center uppercase ${styles.title}`}>Hello, World!</h1>
-      <figure className="mt-8">
-        <Image src={building} alt="Building" />
-      </figure>
+      <div className={`grid place-items-center ${styles.hero}`}>
+        <figure className="max-w-3xl">
+          <Image src={logo} alt="NextSSS Logo" />
+        </figure>
+        <h1 className="mt-10 font-extrabold text-center">Hello, World!</h1>
+      </div>
     </Layout>
   )
 }

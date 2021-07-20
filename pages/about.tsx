@@ -8,14 +8,9 @@ const About: React.FC = () => {
     <Layout>
       <NextSeo title="About" />
       <div className="max-w-xl mx-auto">
-        <h1 className={styles.title}>About NextSSS</h1>
-        <figure className="mt-4">
-          <Image
-            src="/building.jpg"
-            width={3150}
-            height={2100}
-            alt="Building"
-          />
+        <h1 className={styles.title}>About</h1>
+        <figure>
+          <Image src="/logo@2x.png" width={1472} height={642} alt="NextSSS" />
         </figure>
         <p className="mt-4">
           NextSSS is a Next.js static site starter including full setup for

@@ -2,15 +2,16 @@ import Link from './ActiveLink'
 
 const Header: React.FC = () => {
   return (
-    <header className="bg-gray-100 p-4">
+    <header className="border-b border-gray-200 px-4">
       <nav>
         <style jsx>{`
           a {
-            @apply hover:text-blue-500;
+            @apply text-gray-500 inline-block hover:text-black;
+            padding: 1em 0.1em 0.75em;
           }
 
           .active {
-            border-bottom: 1px solid;
+            @apply text-black border-b-2 border-solid border-black;
           }
         `}</style>
         <ul className="flex justify-center gap-8">

@@ -1,6 +1,6 @@
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-gray-100 p-4">
+    <footer className="border-t border-gray-200 bg-gray-50 p-4 self-end">
       <p className="text-center">© 2021 KITERETZ inc.</p>
     </footer>
   )
