@@ -70,6 +70,26 @@ const Nav: React.FC = () => {
 export default Nav
 ```
 
+### Image Component
+
+You can use the same syntax of [next/image](https://nextjs.org/docs/api-reference/next/image) with static export.
+
+Example:
+
+```ts
+import Image from '../components/Image'
+import example1 from '../public/example1.png'
+
+const Home: React.FC = () => {
+  return (
+    <Image src={example} alt="Example 1" />
+    <Image src="/example2.png" width={600} height={400} alt="Example 2" />
+  )
+}
+
+export default Home
+```
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
