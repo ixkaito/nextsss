@@ -1,5 +1,5 @@
 <div align="center">
-  <p><img width="368" alt="NextSSS Logo" src="https://user-images.githubusercontent.com/5457539/122671434-7f736000-d201-11eb-8d7f-249cd346cb96.png"></p>
+  <p><img width="480" alt="NextSSS Logo" src="https://user-images.githubusercontent.com/5457539/151701836-af4099eb-83bf-48a0-bc3a-5539835d50fd.png"></p>
 </div>
 
 NextSSS is a [Next.js](https://nextjs.org/) starter template especially for static site including full setup for TypeScript, Tailwind CSS, Google Analytics, Next SEO, active link component, etc.
