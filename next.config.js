@@ -5,7 +5,7 @@ const config = {
   reactStrictMode: true,
   trailingSlash: true,
   images: {
-    loader: 'imgix',
+    loader: 'custom',
     path: '/',
   },
 }
