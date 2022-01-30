@@ -7,7 +7,7 @@ const About: React.FC = () => {
   return (
     <Layout>
       <NextSeo title="About" />
-      <div className="max-w-xl mx-auto">
+      <div className="mx-auto max-w-xl">
         <h1 className={styles.title}>About</h1>
         <figure>
           <Image src="/logo@2x.png" width={1472} height={642} alt="NextSSS" />

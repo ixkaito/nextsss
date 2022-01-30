@@ -3,13 +3,14 @@
  **/
 const config = {
   parser: '@typescript-eslint/parser',
-  plugins: ['@typescript-eslint'],
+  plugins: ['@typescript-eslint', 'tailwindcss'],
   extends: [
     'eslint:recommended',
     'next',
     'next/core-web-vitals',
     'plugin:react/recommended',
     'plugin:@typescript-eslint/recommended',
+    'plugin:tailwindcss/recommended',
     // Uncomment the following lines to enable eslint-config-prettier
     // Is not enabled right now to avoid issues with the Next.js repo
     // 'prettier',

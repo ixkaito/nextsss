@@ -1,4 +1,5 @@
 import { NextSeo } from 'next-seo'
+import clsx from 'clsx'
 import Layout from '../components/Layout'
 import Image from '../components/Image'
 import styles from '../styles/Home.module.scss'
@@ -15,7 +16,10 @@ const Home: React.FC = () => {
         }}
       />
       <div
-        className={`flex-grow flex-shrink-0 grid place-content-center place-items-center ${styles.hero}`}
+        className={clsx(
+          'grid grow shrink-0 place-content-center place-items-center',
+          styles.hero
+        )}
       >
         <figure className="max-w-3xl">
           <Image src={logo} alt="NextSSS Logo" />

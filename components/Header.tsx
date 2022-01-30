@@ -2,7 +2,7 @@ import Link from './ActiveLink'
 
 const Header: React.FC = () => {
   return (
-    <header className="border-b border-gray-200 px-4">
+    <header className="px-4 border-b border-gray-200">
       <nav>
         <style jsx>{`
           a {
@@ -14,7 +14,7 @@ const Header: React.FC = () => {
             @apply text-black border-b-2 border-solid border-black;
           }
         `}</style>
-        <ul className="flex justify-center gap-8">
+        <ul className="flex gap-8 justify-center">
           <li>
             <Link href="/">
               <a>Home</a>
