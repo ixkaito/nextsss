@@ -90,6 +90,34 @@ const Home: React.FC = () => {
 export default Home
 ```
 
+Note: If you want to deploy the project to Vercel, remove the custom loader from `next.config.js` and `components/Image.tsx`.
+
+`next.config.js`
+
+```diff
+ ...
+-  images: {
+-    loader: 'custom',
+-    path: '/',
+-  },
+ ...
+```
+
+`components/Image.tsx`
+
+```diff
+ ...
+-const customLoader = ({ src }: { src: string }) => {
+-  return src
+-}
+
+ const Image = (props: ImageProps) => {
+-  return <NextImage {...props} loader={customLoader} />
++  return <NextImage {...props} />
+ }
+ ...
+```
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
