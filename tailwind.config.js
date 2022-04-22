@@ -6,9 +6,6 @@ const tailwindConfig = {
   theme: {
     extend: {},
   },
-  variants: {
-    extend: {},
-  },
   plugins: [],
 }
 
