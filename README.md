@@ -11,7 +11,9 @@ Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packag
 ```bash
 npx create-next-app --example https://github.com/ixkaito/nextsss
 ```
+
 or
+
 ```bash
 yarn create next-app --example https://github.com/ixkaito/nextsss
 ```
@@ -36,12 +38,8 @@ import Link from '../components/ActiveLink'
 const Nav: React.FC = () => {
   return (
     <nav>
-      <Link href="/">
-        <a>Home</a>
-      </Link>
-      <Link href="/about/">
-        <a>About</a>
-      </Link>
+      <Link href="/">Home</Link>
+      <Link href="/about/">About</Link>
     </nav>
   )
 }
@@ -58,10 +56,10 @@ const Nav: React.FC = () => {
   return (
     <nav>
       <Link href="/" activeClassName="current">
-        <a>Home</a>
+        Home
       </Link>
       <Link href="/about/" activeClassName="current">
-        <a>About</a>
+        About
       </Link>
     </nav>
   )
