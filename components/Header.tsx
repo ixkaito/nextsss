@@ -14,9 +14,9 @@ const Header: React.FC = () => {
               label: 'About',
               href: '/about/',
             },
-          ].map(({ href, label }) => {
+          ].map(({ href, label }, i) => {
             return (
-              <li>
+              <li key={i}>
                 <Link
                   className="text-gray-500 inline-block hover:text-black pt-[1em] px-[0.1em] pb-[0.75em]"
                   activeClassName="text-black border-b-2 border-solid border-black"
